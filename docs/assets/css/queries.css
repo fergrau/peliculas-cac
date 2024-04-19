@@ -7,6 +7,12 @@
     .hidden_footer {
         display: none;
     }
+    
+    .generos_to_hide, .generos_to_hide:hover, 
+     .generos:hover .dropdown-content {
+        display: none;
+        overflow: hidden;
+    }
 }
 
 
@@ -16,6 +22,12 @@
         /*
         background-color: red;
         */
+    }
+
+    .generos_to_hide, .generos_to_hide:hover, 
+     .generos:hover .dropdown-content {
+        display: visible;
+        overflow: hidden;
     }
 
     .logo_hidden, .nav_hidden {
@@ -217,7 +229,8 @@
     }
 
     .dropdown-content > a {
-        height: 1.8em;
+        height: 1.65em;
+        padding-top: 1em;
     }
 
     .logocombinado_hidden {
@@ -298,7 +311,7 @@
     }
 
     .hidden_f > a:hover {
-        color: #ffffffde;
+        color: #ffffff;
         border-style: none;
         border-radius: 10px;
         background-color: #6cc0bd30;
@@ -379,12 +392,19 @@
         cursor: pointer;
     }
     
-    #boton-hamburguesa{
-        transform: translateX(1em);
+    .logo_hidden{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #boton-hamburguesa {
+        margin-left: 0.5em;
     }
 
     #boton_volver > a:hover {
         background-color: transparent;
+        justify-content: right;
     }
 
     .hamburguesa:hover .dropdown-hamburguesa, 
@@ -406,6 +426,7 @@
     .dropdown-hamburguesa{
         transform: translateX(-5em);
         margin-right: 5em;
+        margin-top: -0.5em;
         display: none;
         position: absolute;
         overflow:visible;
@@ -425,9 +446,15 @@
         overflow: hidden;
     }
 
+    .dropdown-hamburguesa:hover, .dropdown-hamburguesa:active,
+     .dropdown-hamburguesa:focus {
+        transform: translateX(-5em);
+     }
+
     .dropdown-hamburguesa a{
         height: 1.8em;
-        padding-top: 1.2em;
+        padding-top: 0.6em;
+        padding-bottom: 0.5em;
         overflow: hidden;
         color:aliceblue;
         text-decoration: none;
@@ -445,7 +472,8 @@
     .dropdown-hamburguesa .a4 {
         height: 1.2em;
         color: grey;
-        padding-top: 0.8em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
     }
 
     .img {

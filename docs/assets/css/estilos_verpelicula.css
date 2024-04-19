@@ -71,7 +71,7 @@ main{
     font-family: "Vujahday Script", helvetica, sans-serif;
     font-size: 1.5em;
     padding-left: 1em;
-    margin-top: -0.1em;
+    margin-top: 0.1em;
     letter-spacing: 0.05em;
     position: relative;
     font-weight: 100;
@@ -82,6 +82,7 @@ main{
     height: 2.5em;
     padding-right: 2%;
     padding-bottom: 3em;
+    margin-top: -0.07em;
     display: flex;
     flex-direction: row;
     justify-content: right;
@@ -91,6 +92,7 @@ main{
     height: 2.5em;
     width: 8em;
     margin-right: 0.8em;
+    margin-bottom: 0.02em;
     background-color: rgb(5, 73, 95);
     color:aliceblue;
     border-style: none;
@@ -104,6 +106,7 @@ main{
     height: 2.5em;
     width: 11em;
     margin-right: 2em;
+    margin-bottom: 0.02em;
     border-radius: 0.4em;
     background-color: rgb(5, 73, 95);
     color:aliceblue;
@@ -155,7 +158,6 @@ main{
     margin-bottom: 0.3em;
     display: none;
     position: absolute;
-    overflow:visible;
     width: 11em;
     height: auto;
     box-shadow:
@@ -501,3 +503,96 @@ iframe{
 .logo_hidden{
     z-index: 3;
 }
+
+
+/* ANIMACIONES */
+
+.hvr-backward {
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.hvr-backward:hover, .hvr-backward:focus, .hvr-backward:active {
+    -webkit-transform: translateX(-0.4em);
+    transform: translateX(-0.4em);
+}
+
+.animate__fadeIn{
+    --animate-duration: 200ms;
+}
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: transform, box-shadow, border-radius;
+    transition-property: transform, box-shadow, border-radius;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+    box-shadow: 
+    0px 0px 15px -11px rgba(21, 121, 154, 0.06),
+    0px 0px 15px 2px rgba(21, 121, 154, 0.08),
+    0px 0px 11px 5px rgba(21, 121, 154, 0.1);
+    border-radius: 0;
+}
+
+@-webkit-keyframes slideDown {
+    0% {
+      transform-origin: 0 0;
+      transform: translateY(-5%);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: 0 0;
+      transform: translateY(0%);
+      opacity: 1;
+    }
+}
+@keyframes slideDown {
+    0% {
+      transform-origin: 0 0%;
+      transform: translateY(-5%);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: 0 0;
+      transform: translateY(0%);
+      opacity: 1;
+    }
+}
+.slideDown {
+    -webkit-animation-name: slideDown;
+    animation-name: slideDown;
+    overflow: hidden;
+    -webkit-animation-duration: 0.11s;
+    animation-duration: 0.11s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.hvr-fade, aside > button {
+    overflow: hidden;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    -webkit-transition-property: background-color;
+    transition-property: background-color;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active, 
+ aside > button:hover {
+    background-color: #b3c5c4;
+}
+
+.animate__fadeIn{
+    --animate-duration: 200ms;
+}
+
+  
+  
