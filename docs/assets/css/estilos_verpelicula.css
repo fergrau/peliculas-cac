@@ -34,7 +34,7 @@ body{
     font-family: helvetica, verdana, arial, sans-serif;
 }
 main{
-    width: 98%;
+    width: 99%;
     height: auto;
     display: flex;
     flex-direction: column;
