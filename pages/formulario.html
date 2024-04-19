@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fernando E. Grau"/>
+    <link rel="stylesheet" href="../css/formulario.css">
+    <title>Cinefy・Consultas y Sugerencias</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <div>
+                <legend>consultas y sugerencias</legend>
+                <hr>
+            </div>
+            <div id="opciones1">
+                <input type="radio" name="consultasugerencia" class="opcion" value="consulta"><span class="span1">Consulta</span>
+                <input type="radio" name="consultasugerencia" class="opcion" value="sugerencia"><span class="span1">Sugerencia</span>
+                <input type="radio" name="consultasugerencia" class="opcion" value="sugerencia"><span>Link caído</span>
+            </div>
+            <br>
+            <hr>
+            <div id="divp">
+                <p>Ingrese sus datos para poder recibir un feedback (opcional)</p>
+            </div>
+            <div class="nombreapellido">
+                <div>
+                    <input type="text" id="nombre" placeholder="Nombre">
+                    <input type="email" id="email" name="email" placeholder="Correo eletrónico"> 
+                </div>
+            </div>
+            <div class="sexo">
+                <input type="radio" name="sexo" class="opcion" value="1"><span class="span0 span1">Hombre</span>
+                <input type="radio" name="sexo" class="opcion" value="2"><span class="span1">Mujer</span>
+                <input type="radio" name="sexo" class="opcion" value="3"><span class="span1">Otro</span>
+                <input type="radio" name="sexo" class="opcion" value="4"><span class="span1">No decir</span>
+            </div>
+            <div class="fechanacimiento">
+                <label for="fechanac">Fecha de nacimiento</label>
+                <input type="date" id="fechanac" name="Fecha de nacimiento">
+            </div>
+            <div>
+                <textarea name="campotext" id="campotexto" cols="45" rows="7"></textarea>
+                <textarea name="campotext" id="campotexto2" cols="35" rows="7"></textarea>
+                <textarea name="campotext" id="campotexto3" cols="28" rows="7"></textarea>
+            </div>
+            <div>
+                <input type="submit" class="boton1" value="Enviar">
+                <input type="reset" class="boton2" value="Borrar">
+            </div>
+            
+        </fieldset>
+    </form>
+</body>
+</html>
