@@ -14,9 +14,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     background-image: url("../media/img/background.png");
-    
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
@@ -57,16 +55,6 @@ main{
     align-items:center;
     background:linear-gradient(90deg, rgba(0, 0, 0, 0.111), transparent);
 }
-/*
-#hr_aside{
-    width: 96%;
-    padding-left: 0.6em;
-    height: 1.95em;
-    margin-top: 0em;
-    background-color: rgba(0, 0, 0, 0.3);
-    border: none;
-    position: flex;
-}*/
 aside{
     width: 12em;
     margin-left: 1em;
@@ -178,6 +166,7 @@ aside{
     font-weight: 100;
     font-weight: 400;
 }
+
 /* Hoovers Nav */
 .novedades:hover, .boton_generos:hover, 
 .series:hover, .buscar:hover, .aside_genero:hover{
@@ -198,6 +187,7 @@ aside{
     border-radius: 0px;
     align-content: center;
 }
+
 /* DROPDOWN Géneros inicia */
 .generos{
     position:relative;
@@ -272,6 +262,7 @@ aside{
     margin-bottom: 0.1em;
 }
 /* DROPDOWN Géneros fin */
+
 .sectionn{
     width: 80%;
     display: flex;
@@ -328,6 +319,7 @@ aside{
 .h3maspeliculas{
     text-indent: 12.5em;
 }
+
 /* SLIDERS inicio */
 .slider-container {
     width: 98%;
@@ -531,3 +523,12 @@ aside{
     }
 }
 
+/* QUERY PARTICULAR del index */
+
+@media only screen and (min-width: 1051px ) {
+    .generos_to_hide, .generos_to_hide:hover, 
+     .generos:hover .dropdown-content {
+        display: none;
+        overflow: hidden;
+    }
+}

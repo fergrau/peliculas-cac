@@ -8,21 +8,23 @@
         display: none;
     }
     
+    /* (trasladado a estilos.css por ser particular del index)
     .generos_to_hide, .generos_to_hide:hover, 
      .generos:hover .dropdown-content {
         display: none;
         overflow: hidden;
     }
+    */
 }
 
 
 @media only screen and (max-width: 1050px ) {
 
+    /*
     main {
-        /*
         background-color: red;
-        */
     }
+    */
 
     .generos_to_hide, .generos_to_hide:hover, 
      .generos:hover .dropdown-content {
@@ -76,14 +78,13 @@
     }
 }
 
-
 @media only screen and (max-width: 1000px ) {
     
+    /*
     main {
-        /*
         background-color: green;
-        */
     }
+    */
 
     .logo_hidden, .nav_hidden {
         display: none;
@@ -146,14 +147,13 @@
     }
 }
 
-
 @media only screen and (max-width: 916px ) {
     
+    /*
     main {
-        /*
         background-color: violet;
-        */
     }
+    */
 
     .logo_hidden, .nav_hidden {
         display: none;
@@ -209,11 +209,11 @@
 
 @media only screen and (max-width: 825px ) {
 
+    /*
     main {
-        /*
         background-color: orange;
-        */
     }
+    */
 
     .logo_hidden {
         width: 100%;
@@ -351,11 +351,11 @@
 
 @media only screen and (max-width: 650px ) {
 
+    /*
     main {
-        /* 
         background-color: yellow;
-        */
     }
+    */
 
     .sectionheadernav {
         display: none;

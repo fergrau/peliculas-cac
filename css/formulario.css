@@ -281,7 +281,7 @@ input[type="reset"]:hover {
     ;
 }
 
-/* QUERIES */
+/* QUERIES ESPECIFICOS del Formulario */
 
 @media only screen and (min-width: 1050px){
     #campotexto2, #campotexto3{
