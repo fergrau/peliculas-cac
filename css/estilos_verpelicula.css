@@ -27,6 +27,7 @@ body{
     flex-direction: column;
     align-items: center;
     /* ex background url */
+    backdrop-filter: brightness(60%);
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
@@ -155,8 +156,8 @@ main{
 }
 .dropdown-content{
     margin-left: -1.45em;
-    margin-top: -0.3em;
-    margin-bottom: 0.3em;
+    margin-top: -1em;
+    margin-bottom: -0.3em;
     display: none;
     position: absolute;
     width: 11em;
@@ -233,7 +234,7 @@ main{
     flex-direction: column;
     padding-bottom: 1em;
     text-shadow: 2px 2px 9px rgb(0, 0, 0);
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
 }
 .detalles_pelicula{
     width: 80%;
@@ -241,6 +242,7 @@ main{
     flex-direction: row;
     justify-content: left;
     padding-left: 3%;
+    padding-top: 1em;
 }
 .article_sinopsis{
     width: 100%;
@@ -299,7 +301,7 @@ main{
 .contenido{
     font-size: 0.9;
     font-weight: 100;
-    text-indent: 0.75em;
+    margin-left: 0.75em;
     letter-spacing: 1px;
 }
 #idioma{
@@ -312,7 +314,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
 }
 .contenedor_bottom{
     width: 100%;
@@ -502,6 +504,7 @@ iframe{
 
 .logocombinado_hidden{
     z-index: 2;
+    
 }
 
 #boton_buscar_icon {

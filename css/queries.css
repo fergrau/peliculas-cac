@@ -136,7 +136,11 @@
     }
      
     /* de VER PELICULA */
-     #titulo{
+    .headermain_vp {
+        margin-top: -0.3em;
+    }
+    
+    #titulo{
         margin-top: -1.6em;
     }
 
@@ -224,7 +228,7 @@
         background-color: orange;
     }
     */
-    main {
+    .main_index {
         background: url(../media/img/background_byn_reduct.jpg);
     }
 
@@ -241,8 +245,19 @@
         justify-content: space-between;
     }
 
+    .logo_hidden_vp {
+        padding-left: 0.4em;
+    }
+
+    .headermain_vp {
+        padding-left: 0.3em;
+        padding-top: 1.15em;
+        z-index: 2;
+    }
+
     .generos:hover .generos_to_hide{
         background-color: black;
+        z-index: 3;
     }
 
     .dropdown-content > a {
@@ -374,7 +389,7 @@
         background-color: yellow;
     }
     */
-
+    
     .sectionheadernav {
         display: none;
     }
@@ -462,11 +477,13 @@
         align-content: center;
         border-style: none;
         overflow: hidden;
+        z-index: 9;
     }
 
     .dropdown-hamburguesa:hover, .dropdown-hamburguesa:active,
      .dropdown-hamburguesa:focus {
         transform: translateX(-5em);
+        z-index: 9;
      }
 
     .dropdown-hamburguesa a{
@@ -481,10 +498,13 @@
         font-weight: 100;
         text-align: center;
         align-content: center;
+        z-index: 9;
     }
 
     a:hover {
         border-radius: 8px;
+        z-index: 5;
+        z-index: 9;
     }
 
     .dropdown-hamburguesa .a4 {
@@ -492,6 +512,7 @@
         color: grey;
         padding-top: 0.5em;
         padding-bottom: 0.5em;
+        z-index: 9;
     }
 
     .img {
