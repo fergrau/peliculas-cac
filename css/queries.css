@@ -7,6 +7,12 @@
     .hidden_footer {
         display: none;
     }
+
+    .slider_n {
+        padding-left: 0.65em;
+        padding-right: 0.65em;;
+        margin-left: -0.3em;
+    }
     
     /* (trasladado a estilos.css por ser particular del index)
     .generos_to_hide, .generos_to_hide:hover, 
@@ -175,6 +181,10 @@
         margin-top: -0.6em;
     }
 
+    .sectionheadernav {
+        padding-top: 0.75em;
+    }
+
     .slide{
         padding: 0.8em;
     }
@@ -207,19 +217,26 @@
     }
 }
 
-@media only screen and (max-width: 825px ) {
+@media only screen and (max-width: 800px ) {
 
     /*
     main {
         background-color: orange;
     }
     */
+    main {
+        background: url(../media/img/background_byn_reduct.jpg);
+    }
+
+    body{
+        margin-top: 0;
+    }
 
     .logo_hidden {
         width: 100%;
         display: flex;
         flex-direction: row;
-        padding-top: 1em;
+        padding-top: 1.5em;
         background-color: black;
         justify-content: space-between;
     }
@@ -286,6 +303,7 @@
     }
 
     .hidden_footer{
+        padding-top: 3em;
         display:table-column;
         width: 98%;
         background-color: black;
@@ -349,7 +367,7 @@
     }
 }
 
-@media only screen and (max-width: 650px ) {
+@media only screen and (max-width: 580px ) {
 
     /*
     main {

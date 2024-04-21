@@ -7,14 +7,13 @@
     font-style: normal;
 } 
 body{
-    width: 100%;
+    width: 99.3%;
     height: auto;
-    margin-left: -0.2em;
-    margin-bottom: 0.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-image: url("../media/img/background.png");
+    backdrop-filter: brightness(60%);
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
@@ -22,11 +21,11 @@ body{
     color:aliceblue;
 }
 main{
-    width: 99%;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
 }
 
 .superior_con_aside{
@@ -38,7 +37,8 @@ main{
     background-color: rgba(0, 0, 0, 0.111);
 }
 #div_superior_1{
-    width: 100%
+    width: 100%;
+    margin-top: -0.7em;
 }
 #div_superior_2{
     width: 100%;
@@ -87,7 +87,8 @@ aside{
 }
 .sectionheaderlogo{
     width: 30%;
-    padding-left: 3em;
+    padding-left: 2.5em;/* no modificar este valor*/
+    padding-top: 0.2em; /* no modificar este valor*/
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -103,7 +104,7 @@ aside{
     font-family: "Vujahday Script", helvetica, sans-serif;
     font-size: 1.5em;
     padding-left: 1em;
-    margin-top: -0.1em;
+    margin-top: 0.1em;
     letter-spacing: 0.05em;
     position: relative;
     font-weight: 100;
@@ -131,6 +132,7 @@ aside{
     font-size: 1em;
     font-weight: 100;
     box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    padding-bottom: 0.2em;
 }
 .aside_genero{
     width: 12em;
@@ -154,6 +156,7 @@ aside{
     font-weight: 300;
     text-indent: 1em;
     box-shadow: 0px 3px 5px 5px rgba(0, 0, 0, 0.2);
+    padding-bottom: 0.2em;
 }
 .buscar:focus {
     outline: none;
@@ -359,6 +362,73 @@ aside{
     border-radius: 0.3em;
 }
 
+/* BOTON VER TODOS LOS TITULOS */
+.boton{
+    width: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    height: 1.3em;
+    text-align: center;
+    align-content: center;
+    font-size: 1.3em;
+    font-weight: 100;
+    font-variant: small-caps;
+    letter-spacing: 0.3em;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+}
+.vertodos{
+    height: 1.7em;
+    margin: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.22em;
+    padding-bottom: 0.2em;
+    font-variant: small-caps;
+    font-family: helvetica, verdana, arial, sans-serif;
+    font-size: 1em;
+    box-shadow: 
+    0px 0px 5.3px rgba(0, 0, 0, 0.397),
+    0px 0px 17.9px rgba(0, 0, 0, 0.528),
+    0px 0px 80px rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+    border-radius: 0.4em;
+    text-align: center;
+    background-color: rgb(146, 151, 151);
+    border-style: none;
+    z-index: 0;
+    -webkit-transition-duration: 0.11s;
+    transition-duration: 0.11s;
+    -webkit-transition-property: color, transform, box-shadow, border-radius, transform, background-color;
+    transition-property: color, transform, box-shadow, border-radius, transform, background-color;
+}
+.vertodos:hover, .vertodos:focus, .vertodos:active{
+    border-radius: 1.25em;
+    overflow: hidden;
+    color: rgb(23, 169, 169);
+    background-color: #cedddc;
+    font-weight: 500;
+    box-shadow:
+    0px 0px 6px rgb(23, 169, 169, 0.497),
+    0px 0px 17px rgb(23, 169, 169, 0.528),
+    0px 0px 80px rgb(23, 169, 169, 0.7);
+    cursor: pointer;
+    transform: scale(1.05, 1.05);
+    z-index: 2;
+}
+.vertodos > a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    align-content: center;
+}
+.vertodos > a:hover {
+    text-decoration: none;
+    color: rgb(3, 27, 27);
+}
+
 /* FOOTER GENERICO */
 .footer_generico{
     width: 98%;
@@ -366,8 +436,9 @@ aside{
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1));
     align-items:stretch;
     justify-content: center;
-    padding-top: 3em;
-    padding-bottom: 0.5em;
+    padding-top: 5em;
+    padding-bottom: 0.7em;
+    margin-bottom: -0.5em;
     display: flex;
     flex-direction: column;
     align-items: center;

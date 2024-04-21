@@ -11,7 +11,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url("../media/img/background_byn_reduct.jpg");
+    background: url("../media/img/background_byn.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
