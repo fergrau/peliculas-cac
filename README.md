@@ -28,7 +28,7 @@ Pendientes:
 ∙ Crear sección Series e incorporar sus respectivas páginas.
 ∙ Vincular géneros de nav y aside con los #href de la página 'todas las películas' (que ya estarán ordenadas por género). 
 ∙ Cargar > 20 títulos más.
-
+∙ Incorporar flechas a los laterales de los Slider para desplazamiento horizontal sin trackpad (a espera de JS)
 
 NOTA AL PROFESOR: 
 
