@@ -30,6 +30,3 @@ Pendientes:
 ∙ Cargar > 20 títulos más.
 ∙ Incorporar flechas a los laterales de los Slider para desplazamiento horizontal sin trackpad (a espera de JS)
 
-NOTA AL PROFESOR: 
-
-La página de Github Pages vuelve a NO funcionar. Favor de usar link de Netlify hasta poder resolverlo.
