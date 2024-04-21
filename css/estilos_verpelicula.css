@@ -450,7 +450,7 @@ iframe{
 
 /* FOOTER GENERICO*/
 .footer_generico{
-    width: 99%;
+    width: 100%;
     height: 3.5em;
     background: linear-gradient(rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 1));
     align-items:stretch;
