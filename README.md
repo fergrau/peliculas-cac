@@ -29,6 +29,7 @@ Pendientes:
 ∙ Vincular géneros de nav y aside con los #href de la página 'todas las películas' (que ya estarán ordenadas por género). 
 ∙ Cargar > 20 títulos más.
 
-Nota al profesor: 
+
+NOTA AL PROFESOR: 
 
 La página de Github Pages vuelve a NO funcionar. Favor de usar link de Netlify hasta poder resolverlo.
