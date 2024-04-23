@@ -32,10 +32,29 @@
             <div class="nav_hidden hamburguesa">
                 <button id="boton-hamburguesa"><span>&#9776;</span></button>
                 <div class="dropdown-content dropdown-hamburguesa animate__animated animate__fadeIn">
-                    <a rel="noopener" target="_self" class="hvr-fade" href="#" id="a1">Novedades</a>
-                    <a rel="noopener" target="_self" class="hvr-fade" href="#">Generos</a>
+                    <div class="generos">
+                        <button class="boton_generos hvr-fade" href="#">Buscar</button>
+                        <div class="dropdown-content generos_to_hide bbb">
+                            <input class="buscar hvr-fade" type="search" name="Buscar" placeholder="Buscar">
+                        </div>
+                    </div>
+                    <a rel="noopener" target="_self" class="hvr-fade" href="../pages/z_vertodos.html" id="a1">Películas</a>
                     <a rel="noopener" target="_self" class="hvr-fade" href="#">Series</a>
-                    <a rel="noopener" target="_self" class="hvr-fade" href="#">Buscar</a>
+                    <div class="generos">
+                        <button class="boton_generos hvr-fade" href="#">Géneros</button>
+                        <div class="dropdown-content generos_to_hide divb">
+                            <a rel="noopener" target="_self" class="hvr-fade" href="#" id="a1">Acción</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="#">Aventura</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="#">Ciencia Ficción</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="#">Comedia</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="#">Drama</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="#">Infantil</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="#">Romance</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="#">Suspenso</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="#" id="a9">Terror</a>
+                        </div>
+                    </div> 
+                    <!-- <a rel="noopener" target="_self" class="hvr-fade" href="#">Buscar</a> -->
                     <hr>
                     <a class="a4" rel="noopener" target="_self" class="hvr-fade" href="../pages/infoproyecto.html">Acerca de</a>
                     <a class="a4" rel="noopener" target="_self" class="hvr-fade" href="../pages/disclaimer.html">Disclaimer</a>
@@ -116,10 +135,6 @@
     
             <section class="contenedor_bottom">
 
-                <div class="boton">
-                    <button class="noreproduce"><a href="../pages/formulario.html" target="_blank">reportar link caído</a></button>
-                </div>
-
                 <h3 class="h3maspeliculas">sugerencias</h3>
                 <div class="slider-container">
                    <div class="slide">
@@ -141,6 +156,14 @@
             </section>
 
         </section>
+
+        <div class="boton boton_ver">
+            <button class="vertodos"><a href="../pages/z_vertodos.html" target="_self">todas las películas</a></button>
+        </div>
+
+        <div class="boton boton_norep">
+            <button class="noreproduce"><a href="../pages/formulario.html" target="_blank">reportar link</a></button>
+        </div>
     </main>
 
     <footer class="hidden_footer">

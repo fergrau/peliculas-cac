@@ -17,7 +17,6 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
-    background-color: white;
     color:aliceblue;
 }
 main{
@@ -59,7 +58,7 @@ aside{
     width: 12em;
     margin-left: 1em;
     margin-right: 2em;
-    margin-top: -0.6em;
+    /* margin-top: -0.6em; */
     display: flex;
     flex-direction: column;
     background: rgb(1, 29, 38);
@@ -134,6 +133,9 @@ aside{
     box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.2);
     padding-bottom: 0.2em;
 }
+/* .peliculas {
+    background-color: rgb(195, 43, 43);
+} */
 .aside_genero{
     width: 12em;
     background: rgb(1, 29, 38);
@@ -201,9 +203,7 @@ aside{
 }
 .dropdown-content{
     margin-left: -1.45em;
-    /*
-    margin-top: -0.3em;
-    */
+    /* margin-top: -0.3em; */
     margin-top: 0.3em;
     margin-bottom: 0.3em;
     display: none;
@@ -263,8 +263,7 @@ aside{
 }
 #a9 {
     margin-bottom: 0.1em;
-}
-/* DROPDOWN Géneros fin */
+} /* DROPDOWN Géneros fin */
 
 .sectionn{
     width: 80%;
@@ -353,6 +352,7 @@ aside{
     border: none;
 }
 /* SLIDERS fin */
+
 .img{
     box-shadow:
     0px 0px 14.9px -11px rgba(0, 0, 0, 0.138),
@@ -379,7 +379,7 @@ aside{
     letter-spacing: 0.3em;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
 }
-.vertodos{
+.vertodos {
     height: 1.7em;
     margin: 0.5em;
     padding-left: 1em;
@@ -393,10 +393,10 @@ aside{
     0px 0px 5.3px rgba(0, 0, 0, 0.397),
     0px 0px 17.9px rgba(0, 0, 0, 0.528),
     0px 0px 80px rgba(0, 0, 0, 0.7);
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 0.4em;
     text-align: center;
-    background-color: rgb(146, 151, 151);
+    background-color: rgb(74, 198, 198);
     border-style: none;
     z-index: 0;
     -webkit-transition-duration: 0.11s;
@@ -404,12 +404,12 @@ aside{
     -webkit-transition-property: color, transform, box-shadow, border-radius, transform, background-color;
     transition-property: color, transform, box-shadow, border-radius, transform, background-color;
 }
-.vertodos:hover, .vertodos:focus, .vertodos:active{
+.vertodos:hover, .vertodos:focus, .vertodos:active {
     border-radius: 1.25em;
     overflow: hidden;
     color: rgb(23, 169, 169);
     background-color: #cedddc;
-    font-weight: 500;
+    font-weight: 600;
     box-shadow:
     0px 0px 6px rgb(23, 169, 169, 0.497),
     0px 0px 17px rgb(23, 169, 169, 0.528),
@@ -426,6 +426,15 @@ aside{
 .vertodos > a:hover {
     text-decoration: none;
     color: rgb(3, 27, 27);
+}
+
+/* retoques botones simil hover vertodos*/
+.peliculas:hover, .series:hover, .boton_generos:hover, 
+ .buscar:hover, .buscar:active {
+    box-shadow:
+    0px 0px 6px rgb(23, 169, 169, 0.397),
+    0px 0px 17px rgb(23, 169, 169, 0.428),
+    0px 0px 80px rgb(23, 169, 169, 0.6);
 }
 
 /* FOOTER GENERICO */
@@ -474,6 +483,15 @@ aside{
     box-shadow:
     0px 0px 5.3px rgba(73, 127, 175, 0.35);
 }
+
+button {
+    cursor: pointer;
+}
+
+.buscar:hover {
+    cursor: text;
+}
+
 
 /* ANIMACIONES */
 
@@ -549,9 +567,11 @@ aside{
     transform: scale(1.04);
     box-shadow: 
     0px 0px 15px -11px rgba(21, 121, 154, 0.06),
+    0px 0px 13px rgb(23, 169, 169, 0.397),
     0px 0px 15px 2px rgba(21, 121, 154, 0.08),
     0px 0px 11px 5px rgba(21, 121, 154, 0.1);
     border-radius: 0;
+    z-index: 3;
 }
 
 .text-focus-in {

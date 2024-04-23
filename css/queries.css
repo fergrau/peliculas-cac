@@ -230,6 +230,9 @@
     */
     .main_index {
         background: url(../media/img/background_byn_reduct.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
     }
 
     body{
@@ -301,6 +304,7 @@
         border-width: thin;
         border-color: #3e3e3ec2;
         border-radius: 10px;
+        padding-top: 0.2em;
     }
 
     #buscar {
@@ -450,6 +454,12 @@
         border-style: none;
         background-color: black;
         margin-right: 5em;
+        overflow: visible;
+    }
+
+    .boton_generos {
+        border-style: none;
+        padding-left: 1em;
     }
 
     #b1{
@@ -486,7 +496,7 @@
         z-index: 9;
      }
 
-    .dropdown-hamburguesa a{
+    .dropdown-hamburguesa a {
         height: 1.8em;
         padding-top: 0.6em;
         padding-bottom: 0.5em;
@@ -547,4 +557,35 @@
         width: 90%;
         margin-top: 2.5em;
     }
+
+    /* Input BUSCAR HAMBURGUESA */
+    .bb {
+        overflow: visible;
+        transform:translateY(-2.75em) translateX(2.15em);
+        box-shadow: none;
+    }
+    .bbb {
+        overflow: visible;
+        transform:translateY(-1.55em) translateX(2.15em);
+    }
+    .boton_generos {
+        box-shadow: none;
+    }
+    .divb {
+        transform:translateY(-1.75em) translateX(1.3em);
+        z-index: 11;
+    }
+    .divb > a{
+        background-color: rgb(33, 33, 33);
+        border-radius: 0;
+    }
+    .divc {
+        transform:translateY(-3.15em) translateX(1.3em);
+        z-index: 11;
+    }
+    .divc > a{
+        background-color: rgb(33, 33, 33);
+        border-radius: 0;
+    }
+
 }

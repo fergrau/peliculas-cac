@@ -314,7 +314,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 7));
 }
 .contenedor_bottom{
     width: 100%;
@@ -353,56 +353,63 @@ iframe{
     padding-bottom: 1em;
 }
 .noreproduce{
-    height: 2.2em;
-    margin: 0.5em;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 0.22em;
-    padding-bottom: 0.2em;
+    height: 1.5em;
+    padding: 0;
+    padding-top: 0.065em;
+    width: fit-content;
     font-variant: small-caps;
     font-family: helvetica, verdana, arial, sans-serif;
-    font-size: 1em;
+    font-size: 0.85em;
     box-shadow: 
     0px 0px 5.3px rgba(0, 0, 0, 0.397),
     0px 0px 17.9px rgba(0, 0, 0, 0.528),
     0px 0px 80px rgba(0, 0, 0, 0.7);
-    font-weight: 500;
-    border-radius: 0.5em;
+    font-weight: 600;
+    border-radius: 1em;
     text-align: center;
-    background-color: rgb(151, 146, 146);
+    background-color: rgba(215, 111, 26, 0.777);
     border-style: none;
     z-index: 0;
-    -webkit-transition-duration: 0.15s;
-    transition-duration: 0.15s;
-    -webkit-transition-property: color, transform, box-shadow, border-radius, transform, background-color;
-    transition-property: color, transform, box-shadow, border-radius, transform, background-color;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: color, transform, box-shadow, border-radius, background-color, padding;
+    transition-property: color, transform, box-shadow, border-radius, background-color, padding;
 }
 .noreproduce:hover{
-    padding-top: 0.2em;
+    padding-top: 0.06em;
     align-items: center;
     color:black;
     border-style: none;
     border-radius: 1.25em;
     font-family: helvetica, verdana, arial, sans-serif;
-    font-size: 1em;
     background-color: rgb(188, 182, 170);
     color: rgb(68, 10, 10);
-    font-weight: 500;
+    font-weight: 600;
     box-shadow:
     0px 0px 6px rgba(167, 20, 20, 0.497),
     0px 0px 17px rgba(167, 20, 20, 0.528),
     0px 0px 80px rgba(167, 20, 20, 0.7);
     cursor: pointer;
-    transform: scale(1.05, 1.05);
-    z-index: 2;
+    z-index: 3;
+    overflow: hidden;
+    transform: scaleX(1.03);
 }
 .noreproduce > a {
+    height: 1.5em;
+    width: 100%;
+    padding: 0 1em 0 1em;
+    padding-top: 0.03em;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight: 400;
 }
 .noreproduce > a:hover {
+    height: 100%;
+    padding: 0 1em 0 1em;
+    padding-top: 0.05em;
     text-decoration: none;
-    color: rgb(68, 10, 10);
+    color: rgb(65, 4, 4);
+    font-weight: 600;
 }
 .h3maspeliculas{
     width: 100%;
@@ -416,6 +423,7 @@ iframe{
     letter-spacing: 0.3em;
     background-color: rgba(0, 0, 0, 0.3);
     padding-top: 0.25em;
+    margin-top: 4em;
 }
 
 /* SLIDERS */
@@ -454,7 +462,7 @@ iframe{
 .footer_generico{
     width: 100%;
     height: 3.5em;
-    background: linear-gradient(rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 1));
+    background-color: black;
     align-items:stretch;
     justify-content: center;
     padding-top: 3em;
@@ -515,6 +523,81 @@ iframe{
     z-index: 3;
 }
 
+button {
+    cursor: pointer;
+}
+
+.buscar:hover {
+    cursor: text;
+}
+
+/* BOTON VER TODOS LOS TITULOS */
+.boton{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    height: 1.3em;
+    text-align: center;
+    align-content: center;
+    font-size: 1.3em;
+    font-weight: 100;
+    font-variant: small-caps;
+    letter-spacing: 0.3em;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+}
+.vertodos {
+    height: 1.7em;
+    margin: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.22em;
+    padding-bottom: 0.2em;
+    font-variant: small-caps;
+    font-family: helvetica, verdana, arial, sans-serif;
+    font-size: 1em;
+    box-shadow: 
+    0px 0px 5.3px rgba(0, 0, 0, 0.397),
+    0px 0px 17.9px rgba(0, 0, 0, 0.528),
+    0px 0px 80px rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+    border-radius: 0.4em;
+    text-align: center;
+    background-color: rgb(74, 198, 198);
+    border-style: none;
+    z-index: 0;
+    -webkit-transition-duration: 0.11s;
+    transition-duration: 0.11s;
+    -webkit-transition-property: color, transform, box-shadow, border-radius, transform, background-color;
+    transition-property: color, transform, box-shadow, border-radius, transform, background-color;
+}
+.vertodos:hover, .vertodos:focus, .vertodos:active {
+    border-radius: 1.25em;
+    overflow: hidden;
+    color: rgb(23, 169, 169);
+    background-color: #cedddc;
+    font-weight: 600;
+    box-shadow:
+    0px 0px 6px rgb(23, 169, 169, 0.497),
+    0px 0px 17px rgb(23, 169, 169, 0.528),
+    0px 0px 80px rgb(23, 169, 169, 0.7);
+    cursor: pointer;
+    transform: scale(1.05, 1.05);
+    z-index: 2;
+}
+.vertodos > a {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    align-content: center;
+}
+.vertodos > a:hover {
+    text-decoration: none;
+    color: rgb(3, 27, 27);
+}
 
 /* ANIMACIONES */
 
@@ -603,4 +686,17 @@ iframe{
 
 .animate__fadeIn{
     --animate-duration: 200ms;
+}
+
+/* retoques específicos de botones */
+
+.boton_ver, .boton_norep {
+    background-color: black;
+}
+
+.boton_ver {
+    padding-top: 2em;
+}
+.boton_norep {
+    padding-bottom: 1em;
 }
