@@ -22,6 +22,12 @@ Actualizaciones:
 ∙ Cambio de background-image para los modos tablet y móvil por ByN en peso reducido para optimizar consumo de datos.
 ∙ Eliminación de bordes y paddings del main (concepto de diseño previo).
 
+23/4
+
+∙ Creado Branch "v2" con nuevas actualizaciones: 
+∙ En versión móvil: en menú hamburguesa, añadido de input Buscar y menú desplegable Géneros dentro, mediante hover.
+∙ Acceso a página "Todas las películas" (página en construcción).
+
 Pendientes:
 
 ∙ Crear páginas: Todas las películas (ordenadas por género), Novedades, Géneros (separados por #href).
