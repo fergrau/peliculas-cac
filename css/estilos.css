@@ -302,7 +302,7 @@ aside{
 }
 .h2novedades{
     width: auto;
-    margin-top: -0.8em;
+    margin-top: -1.25em;
     margin-bottom: 1em;
     overflow: hidden;
 }
@@ -622,3 +622,5 @@ button {
         overflow: hidden;
     }
 }
+
+/* CAROUSEL */

@@ -424,7 +424,7 @@
         font-size: 2.5em;
         font-weight: 100;
         font-family: sans-serif;
-        margin-right: -2em;
+        margin-right: -1em;
         border: none;
         cursor: pointer;
     }
@@ -433,6 +433,7 @@
         display: inline-flex;
         flex-direction: row;
         justify-content: space-around;
+        padding-left: 1.3em;
     }
 
     #boton-hamburguesa {
@@ -467,7 +468,7 @@
     }
 
     .dropdown-hamburguesa{
-        transform: translateX(-5em);
+        transform: translateX(-7em);
         margin-right: 5em;
         margin-top: -0.5em;
         display: none;
@@ -492,7 +493,7 @@
 
     .dropdown-hamburguesa:hover, .dropdown-hamburguesa:active,
      .dropdown-hamburguesa:focus {
-        transform: translateX(-5em);
+        transform: translateX(-7em);
         z-index: 9;
      }
 
@@ -561,18 +562,19 @@
     /* Input BUSCAR HAMBURGUESA */
     .bb {
         overflow: visible;
-        transform:translateY(-2.75em) translateX(2.15em);
+        transform:translateY(-3.2em) translateX(2.15em);
         box-shadow: none;
     }
     .bbb {
         overflow: visible;
-        transform:translateY(-1.55em) translateX(2.15em);
+        transform:translateY(-1.9em) translateX(2.15em);
     }
     .boton_generos {
         box-shadow: none;
+        margin-bottom: 0.4em;
     }
     .divb {
-        transform:translateY(-1.75em) translateX(1.3em);
+        transform:translateY(-2.15em) translateX(1.3em);
         z-index: 11;
     }
     .divb > a{
@@ -582,10 +584,14 @@
     .divc {
         transform:translateY(-3.15em) translateX(1.3em);
         z-index: 11;
+        color: black;
     }
     .divc > a{
         background-color: rgb(33, 33, 33);
         border-radius: 0;
+    }
+    .divc > a:hover {
+        color: black;
     }
 
 }
