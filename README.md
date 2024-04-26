@@ -28,6 +28,8 @@ Actualizaciones:
 ∙ En versión móvil: en menú hamburguesa, añadido de input Buscar y menú desplegable Géneros dentro, mediante hover.
 ∙ Acceso a página "Todas las películas" (página en construcción).
 
+
+---------------
 Pendientes:
 
 ∙ Crear páginas: Todas las películas (ordenadas por género), Novedades, Géneros (separados por #href).
