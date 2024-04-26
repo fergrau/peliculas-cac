@@ -13,7 +13,7 @@ Actualizaciones:
 21/4
 
 ∙ Disponibles 10 títulos reproducibles.
-∙ Todas las películas tienen su página propia.
+∙ Todas las películas tienen su página propia (reemplazo de 'verpeliculas.html' genérico por 10 .html individuales).
 ∙ Página navegable hacia, desde y entre las películas.
 ∙ Añadido botón para ver todos los títulos en index. 
 ∙ Animaciones en todos los botones y accesos (excepto footer por minimalismo).
