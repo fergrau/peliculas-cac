@@ -36,3 +36,6 @@ Pendientes:
 ∙ Cargar > 20 títulos más.
 ∙ Incorporar flechas a los laterales de los Slider para desplazamiento horizontal sin trackpad (a espera de JS)
 
+---------------
+Directorio /master = contenedor interno para elementos de construcción del sitio. Incluye 'códigos plantilla' y paleta de colores.
+
