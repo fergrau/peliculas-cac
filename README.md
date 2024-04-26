@@ -1,4 +1,4 @@
-Actualizaciones:
+Historial de Actualizaciones:
 
 19/4 (y anterior)
 
