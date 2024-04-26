@@ -223,11 +223,13 @@
 
 @media only screen and (max-width: 800px ) {
 
-    /*
-    main {
-        background-color: orange;
+    main, body {
+        /* background-color: orange; */
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
-    */
+
     .main_index {
         background: url(../media/img/background_byn_reduct.jpg);
         background-repeat: no-repeat;
@@ -388,11 +390,14 @@
 
 @media only screen and (max-width: 580px ) {
 
-    /*
-    main {
-        background-color: yellow;
+    
+    main, body {
+        /* background-color: yellow; */
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
-    */
+    
     
     .sectionheadernav {
         display: none;
@@ -406,12 +411,13 @@
     }
 
     .logocombinado_hidden {
-        margin-left: -7em;
+        margin-left: -5em;
     }
 
     .logo_hidden{
         display: flex;
         flex-direction: row;
+        width: 93.5%;
     }
 
     .nav_hidden {
@@ -424,7 +430,7 @@
         font-size: 2.5em;
         font-weight: 100;
         font-family: sans-serif;
-        margin-right: -1em;
+        padding-right: -1em;
         border: none;
         cursor: pointer;
     }
@@ -433,7 +439,7 @@
         display: inline-flex;
         flex-direction: row;
         justify-content: space-around;
-        padding-left: 1.3em;
+        padding-left: 1.5em;
     }
 
     #boton-hamburguesa {
@@ -533,7 +539,7 @@
     #boton_buscar_icon{
         display: inline;
         background-color: black;
-        transform:translateY(-0.3em) translateX(2em);
+        transform:translateY(-0.2em) translateX(2em);
         border: none;
         cursor: pointer;
         margin-right: -3em;
@@ -594,4 +600,12 @@
         color: black;
     }
 
+    /* re-apply para <a> a4*/
+    .dropdown-hamburguesa > .a4 {
+        height: 1.2em !important;
+        color: grey !important;
+        padding-top: 0.5em !important;
+        padding-bottom: 0.5em !important;
+        z-index: 9;
+    }
 }
