@@ -7,7 +7,7 @@ Historial de Actualizaciones:
 ∙ Vinculos hacia y desde página de reproducción de película. <br>
 ∙ Animaciones en logo del index y de 'verpeliculas'. <br>
 ∙ Animaciones en la mayoría de los botones. <br>
-∙ Oultamiento o visualización del menú desplegable Géneros en nav según visualización u ocultamiento del aside, por redundancia. <br>
+∙ Oultamiento / visualización del menú desplegable Géneros en nav según visualización / ocultamiento del aside al cambiar las dimensiones del viewport, evitando redundancia. <br>
   
 
 21/4
