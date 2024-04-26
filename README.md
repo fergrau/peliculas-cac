@@ -41,6 +41,6 @@ Pendientes:
 ---------------
 Notas:
 
-Directorio /master = contenedor interno para elementos de construcción del sitio. Incluye 'códigos plantilla' y paleta de colores.
-Branch 'v2' (actual default) creado por modificaciones importantes sobre código funcional primario (main). 
+∙ Directorio /master = contenedor interno para elementos de construcción del sitio. Incluye 'códigos plantilla' y paleta de colores.
+∙ Branch 'v2' (actual default) creado por modificaciones importantes sobre código funcional primario (main). 
 
