@@ -1,5 +1,10 @@
 <h3>Historial de Actualizaciones:</h3><br>
 
+<b>22/5</b>
+
+∙ Página de Inicio de Sesión y Registro: formularios intercambiables mediante link crear/iniciar. Registra los errores (mail incorrecto, dominio desconocido, falta de psw, checkbox sin marcar, etc), los captura mediante una variable de control y recolecta los errores en un Array para mostrarlos en un Modal al hacer click en el botón submit. Caso Array vacío y variable de control en 0 = login. También chequea que el input de mail contenga @ y . en la dirección, y a modo ejemplo también que el fragmento de string ingresado entre @ y el . en el mail sea válido, comparandolo con un Array preexistente con dominios conocidos (google, hotmail, yahoo, msn, etc). Caso todos los campos sean faltantes, los errores se resumen en un único mensaje dentro del Modal (en lugar de acumular los individuales).<br>
+∙ Se eliminó botón 'Series' y se incluyó un nuevo botón 'Iniciar Sesion'. Al loguearse se guarda como true una variable de status mediante localStorage; ésta es leída en el index y las demás páginas para cambiar el botón de 'Iniciar Sesión' por uno de 'Sesión iniciada', modificando asimismo su estilo visual. Hover mediante JS para mostrar la opción de 'Cerrar Sesión' al pasar el puntero sobre el botón de 'Sesión Iniciada' (mouseover y mouseout); Evento onclick sobre este botón para setear a false la variable y resetear todo el botón en cuestión, mostrando nuevamente 'Iniciar Sesión'. Si se hace click en él, devuelve a la ventana de Login/Registro como al cargar la primera vez.
+
 <b>23/4</b>
 
 ∙ Creado Branch "v2" con nuevas actualizaciones: <br>
