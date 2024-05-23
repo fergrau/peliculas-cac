@@ -309,6 +309,25 @@
         padding-top: 0.2em;
     }
 
+    #login {
+        background-color: black;
+        border: solid;
+        border-width: thin;
+        border-color: #3e3e3ec2;
+        padding-top: 0.25em;
+    }
+
+    #login2 {
+        background-color: black;
+        border: solid;
+        border-width: thin;
+        border-color: #3e3e3ec2;
+        border-radius: 10px;
+    }
+    #login:hover {
+        padding-top: 0.25em;
+    }
+
     #buscar {
         width: 9em;
         margin-right: 0;
@@ -417,7 +436,10 @@
     .logo_hidden{
         display: flex;
         flex-direction: row;
-        width: 93.5%;
+        width: 94.5%;
+    }
+    .headermain_vp{
+        width: 98.35%;
     }
 
     .nav_hidden {
@@ -462,6 +484,7 @@
         background-color: black;
         margin-right: 5em;
         overflow: visible;
+        border-radius: 8px;
     }
 
     .boton_generos {
@@ -495,12 +518,14 @@
         border-style: none;
         overflow: hidden;
         z-index: 9;
+        border-radius: 8px;
     }
 
     .dropdown-hamburguesa:hover, .dropdown-hamburguesa:active,
      .dropdown-hamburguesa:focus {
         transform: translateX(-7em);
         z-index: 9;
+        border-radius: 8px;
      }
 
     .dropdown-hamburguesa a {
@@ -516,6 +541,7 @@
         text-align: center;
         align-content: center;
         z-index: 9;
+        border-radius: 8px;
     }
 
     a:hover {
@@ -607,5 +633,35 @@
         padding-top: 0.5em !important;
         padding-bottom: 0.5em !important;
         z-index: 9;
+    }
+    .bb, .bb:hover {
+        border-style: none !important;
+        outline: none !important;
+    }
+    .dropdown-content > .buscar {
+        text-align: center;
+        text-indent: -0.5em;
+    }
+
+    #spanLogin1 {
+        color: rgb(6, 110, 6);
+    }
+    #spanLogin1:hover {
+        background-color: transparent !important;
+        border-style: solid;
+        border-width: thin;
+        border-color:rgb(6, 110, 6);
+        height: 1.7em;
+    }
+    #spanLogin2 {
+        color: red;
+        height: 1.7em;
+    }
+    #spanLogin2:hover {
+        background-color: transparent !important;
+        border-style: solid;
+        border-width: thin;
+        border-color: rgb(173, 35, 0);
+        height: 1.7em;
     }
 }
