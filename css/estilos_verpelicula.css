@@ -22,7 +22,7 @@ body{
     height: auto;
     margin-left: 0;
     margin-top: 0;
-    margin-bottom: 0em;
+    margin-bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -251,7 +251,7 @@ main{
     padding-bottom: 3em;
     letter-spacing: 1.2px;
 }
-#titulo{
+#titulo {
     padding-top: 3em;
     font-size: 2.5em;
     font-family: dosis, helvetica, verdana, sans-serif;

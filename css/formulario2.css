@@ -1,0 +1,140 @@
+*{
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+body {
+    background-image: url("../media/img/background_byn_reduct.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr minmax(400px, 1fr) 1fr;
+}
+
+#div_principal {
+  backdrop-filter: brightness(60%);
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-top: 1em;
+  padding-bottom: 3em;
+  border-radius: 15px;
+}
+
+#div_crear, #div_ingresar {
+  color: aliceblue;
+}
+
+#div_crear button, #div_ingresar button {
+  background-color: transparent;
+  border-color: transparent;
+  color: red;
+  font-size: 1.1em;
+}
+
+input {
+  accent-color: rgb(89, 183, 172);
+  text-indent: 0.5em;
+}
+
+input:hover, input:focus {
+  cursor: pointer;
+  outline: none;
+  border-color: rgb(89, 183, 172);
+}
+
+label {
+  color: white;
+  font-size: 0.9em;
+}
+
+h1 {
+  color: #ccc;
+}
+
+/* hiddens iniciales */
+.hidden {
+  display: none !important;
+}
+
+/* modal */
+#openModalBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* El modal (oculto por defecto) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal contenido */
+.modal-content {
+  background-color: #000000de;
+  margin: 30% auto;
+  padding: 2em;
+  padding-bottom: 1em;
+  border: solid rgba(124, 28, 28, 0.397);
+  border-width: thin;
+  width: 90%;
+  border-radius: 8px;
+}
+/* Botón de cerrar */
+.close {
+  color: red;
+  float: right;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#errores {
+  color:aliceblue;
+  text-align: left;
+  padding-left: 1em;
+}
+
+#fechaNac {
+  transform: translateY(0.15em);
+}
+
+#countryDropdown {
+  padding: 0;
+  margin: 0;
+  width: 56%;
+  height: 1.9em;
+  border-radius: 8px;
+  margin-top: 0.5em;
+  text-indent: 0.2em;
+}
+
+.home {
+  color: rgb(143, 143, 143);
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(143, 143, 143);
+  padding: 0.5em 1em;
+  border-radius: 18px;
+  font-size: 1em;
+  font-weight: 100;
+}

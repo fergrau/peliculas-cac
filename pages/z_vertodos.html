@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Fernando E. Grau"/>
-    <title>Cinefy・Películas Online</title>
+    <title>Cinefy・Películas por géneros</title>
+    
     <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" href="../css/z_vertodos.css">
     <link rel="stylesheet" href="../css/queries.css">
+    <link rel="stylesheet" href="../css/z_vertodos.css">
+
     <link rel="icon" href="../media/ico/flavicon.ico">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -17,7 +19,7 @@
 </head>
 
 <body>
-    <section class="logo_hidden">
+    <header class="logo_hidden">
         <div class="logocombinado_hidden">
             <div class="hvr-backward">
                 <a href="../index.html">
@@ -28,32 +30,44 @@
             <h1 id="h1eslogan">Cine à la carte</h1>
         </div>
 
-        <div class="nav_hidden hamburguesa">
+        <nav class="nav_hidden hamburguesa">
             <button id="boton-hamburguesa"><span>&#9776;</span></button>
             <div class="dropdown-content dropdown-hamburguesa animate__animated animate__fadeIn">
-                <!-- <a rel="noopener" target="_self" class="hvr-fade" href="#" id="a1">Novedades</a> -->
-                <!-- <a rel="noopener" target="_self" class="hvr-fade" href="#">Generos</a> -->
-                <a rel="noopener" target="_self" class="hvr-fade" href="#">Series</a>
-                <!-- <a rel="noopener" target="_self" class="hvr-fade" href="#">Buscar</a> -->
                 <div class="generos">
                     <button class="boton_generos hvr-fade" href="#">Buscar</button>
                     <div class="dropdown-content generos_to_hide bb">
                         <input class="buscar hvr-fade" type="search" name="Buscar" placeholder="Buscar">
                     </div>
                 </div>
+                <a rel="noopener" target="_self" class="hvr-fade" href="../pages/z_novedades.html" id="a1">Novedades</a>
+                <a rel="noopener" target="_self" class="hvr-fade" href="../pages/z_series.html">Series</a>
+                <div class="generos">
+                    <button class="boton_generos hvr-fade" href="#">Géneros</button>
+                    <div class="dropdown-content generos_to_hide divc">
+                            <a rel="noopener" target="_self" class="hvr-fade" href="../pages/z_vertodos.html#accion" id="a1">Acción</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="../pages/z_vertodos.html#aventura">Aventura</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="../pages/z_vertodos.html#cienciaficcion">Ciencia Ficción</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="../pages/z_vertodos.html#comedia">Comedia</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="../pages/z_vertodos.html#drama">Drama</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="../pages/z_vertodos.html#infantil">Infantil</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="../pages/z_vertodos.html#romance">Romance</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="../pages/z_vertodos.html#suspenso">Suspenso</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="../pages/z_vertodos.html#terror" id="a9">Terror</a>
+                    </div>
+                </div> 
                 <hr>
                 <a class="a4" rel="noopener" target="_self" class="hvr-fade" href="../pages/infoproyecto.html">Acerca de</a>
                 <a class="a4" rel="noopener" target="_self" class="hvr-fade" href="../pages/disclaimer.html">Disclaimer</a>
                 <a class="a4" rel="noopener" target="_self" class="hvr-fade" href="../pages/contacto.html">Contacto</a>
                 <a class="a4" rel="noopener" target="_self" class="hvr-fade" href="../pages/formulario.html">Sugerencias</a>
             </div>
-        </div> 
+        </nav> 
 
-    </section>
+    </header>
 
     <section class="superior_con_aside">
         <div id="div_superior_1">
-            <header class="headermain">
+            <nav class="headermain">
                 <section class="sectionheaderlogo">
                     <div class="hvr-backward">
                         <a class="logocombinado" href="../index.html">
@@ -64,32 +78,336 @@
                     <h1 id="h1eslogan">Cine à la carte</h1>
                 </section>
                 <section class="sectionheadernav">
-                    <!-- <button class="novedades hvr-fade" alt="novedades">Novedades</button>
+                    <a href="../pages/z_novedades.html"><button class="novedades peliculas hvr-fade" alt="novedades">Novedades</button></a> 
+                    <a href="../pages/z_series.html"><button class="series hvr-fade" alt="series">Series</button></a>
                     <div class="generos">
                         <button class="boton_generos hvr-fade" href="#">Géneros</button>
                         <div class="dropdown-content slideDown generos_to_hide">
-                            <a rel="noopener" target="_self" class="hvr-fade" href="#" id="a1">Acción</a>
-                            <a rel="noopener" target="_self" class="hvr-fade" href="#">Aventura</a>
-                            <a rel="noopener" target="_self" class="hvr-fade" href="#">Ciencia Ficción</a>
-                            <a rel="noopener" target="_self" class="hvr-fade" href="#">Comedia</a>
-                            <a rel="noopener" target="_self" class="hvr-fade" href="#">Drama</a>
-                            <a rel="noopener" target="_self" class="hvr-fade" href="#">Infantil</a>
-                            <a rel="noopener" target="_self" class="hvr-fade" href="#">Romance</a>
-                            <a rel="noopener" target="_self" class="hvr-fade" href="#">Suspenso</a>
-                            <a rel="noopener" target="_self" class="hvr-fade" href="#" id="a9">Terror</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="../pages/z_vertodos.html#accion" id="a1">Acción</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="../pages/z_vertodos.html#aventura">Aventura</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="../pages/z_vertodos.html#cienciaficcion">Ciencia Ficción</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="../pages/z_vertodos.html#comedia">Comedia</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="../pages/z_vertodos.html#drama">Drama</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="../pages/z_vertodos.html#infantil">Infantil</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="../pages/z_vertodos.html#romance">Romance</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="../pages/z_vertodos.html#suspenso">Suspenso</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="../pages/z_vertodos.html#terror" id="a9">Terror</a>
                         </div>
                     </div>    
-                    <button class="series hvr-fade" href="#" alt="series">Series</button> -->
                     <input class="buscar hvr-fade" type="search" name="Buscar" placeholder="Buscar">
                 </section>
-            </header>
+            </nav>
         </div>
     </section>
 
     <main class="main_vertodos">
 
-        <h3 class="h3maspeliculas h3vertodos">género aquí</h3>
+        <!-- <h3 class="h3maspeliculas h3vertodos">películas por género</h3> -->
+
+        <h4 class="h3maspeliculas h3vertodos">acción</h4>
+        <section name="accion" class="genero_vt">
+            <div class="contenedor">
+               
+                <div class="elemento hvr-grow">
+                    <a href="../pages/argylle.html" title="ver Argylle">
+                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
+                    <div>
+                        <h3 class="titulo_vt">Argylle</h3>
+                        <div class="detalles">
+                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
+                        </div>
+                    </a>
+                        <div class="generos sinopsis-div">
+                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
+                            <div class="dropdown-content hvr-fade">
+                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
+                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
+                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
+                                    espionaje… donde nada, ni nadie, es lo que parece</p>
+                            </div>
+                        </div> 
+                </div>
+                
+            </div>
+                
+                <div class="elemento ">
+                    <a href="../pages/argylle.html" title="ver Argylle">
+                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
+                    </a>
+                    <div>
+                        <h3 class="titulo_vt">Argylle</h3>
+                        <div class="detalles">
+                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
+                        </div>
+                        <div class="generos sinopsis-div">
+                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
+                            <div class="dropdown-content hvr-fade">
+                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
+                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
+                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
+                                    espionaje… donde nada, ni nadie, es lo que parece</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="elemento ">
+                    <a href="../pages/argylle.html" title="ver Argylle">
+                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
+                    </a>
+                    <div>
+                        <h3 class="titulo_vt">Argylle</h3>
+                        <div class="detalles">
+                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
+                        </div>
+                        <div class="generos sinopsis-div">
+                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
+                            <div class="dropdown-content hvr-fade">
+                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
+                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
+                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
+                                    espionaje… donde nada, ni nadie, es lo que parece</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                
+                <div class="elemento ">
+                    <a href="../pages/argylle.html" title="ver Argylle">
+                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
+                    </a>
+                    <div>
+                        <h3 class="titulo_vt">Argylle</h3>
+                        <div class="detalles">
+                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
+                        </div>
+                        <div class="generos sinopsis-div">
+                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
+                            <div class="dropdown-content hvr-fade">
+                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
+                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
+                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
+                                    espionaje… donde nada, ni nadie, es lo que parece</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="elemento ">
+                    <a href="../pages/argylle.html" title="ver Argylle">
+                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
+                    </a>
+                    <div>
+                        <h3 class="titulo_vt">Argylle</h3>
+                        <div class="detalles">
+                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
+                        </div>
+                        <div class="generos sinopsis-div">
+                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
+                            <div class="dropdown-content hvr-fade">
+                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
+                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
+                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
+                                    espionaje… donde nada, ni nadie, es lo que parece</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="elemento ">
+                    <a href="../pages/argylle.html" title="ver Argylle">
+                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
+                    </a>
+                    <div>
+                        <h3 class="titulo_vt">Argylle</h3>
+                        <div class="detalles">
+                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
+                        </div>
+                        <div class="generos sinopsis-div">
+                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
+                            <div class="dropdown-content hvr-fade">
+                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
+                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
+                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
+                                    espionaje… donde nada, ni nadie, es lo que parece</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <h4 class="h3maspeliculas h3vertodos">aventura</h4>
+        <section name="aventura" class="genero_vt">
+            
+            <div class="contenedor">
+               
+                <div class="elemento hvr-grow">
+                    <a href="../pages/argylle.html" title="ver Argylle">
+                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
+                    <div>
+                        <h3 class="titulo_vt">Argylle</h3>
+                        <div class="detalles">
+                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
+                        </div>
+                    </a>
+                        <div class="generos sinopsis-div">
+                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
+                            <div class="dropdown-content hvr-fade">
+                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
+                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
+                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
+                                    espionaje… donde nada, ni nadie, es lo que parece</p>
+                            </div>
+                        </div> 
+                </div>
+                
+            </div>
+                
+                <div class="elemento ">
+                    <a href="../pages/argylle.html" title="ver Argylle">
+                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
+                    </a>
+                    <div>
+                        <h3 class="titulo_vt">Argylle</h3>
+                        <div class="detalles">
+                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
+                        </div>
+                        <div class="generos sinopsis-div">
+                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
+                            <div class="dropdown-content hvr-fade">
+                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
+                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
+                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
+                                    espionaje… donde nada, ni nadie, es lo que parece</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="elemento ">
+                    <a href="../pages/argylle.html" title="ver Argylle">
+                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
+                    </a>
+                    <div>
+                        <h3 class="titulo_vt">Argylle</h3>
+                        <div class="detalles">
+                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
+                        </div>
+                        <div class="generos sinopsis-div">
+                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
+                            <div class="dropdown-content hvr-fade">
+                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
+                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
+                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
+                                    espionaje… donde nada, ni nadie, es lo que parece</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                
+                <div class="elemento ">
+                    <a href="../pages/argylle.html" title="ver Argylle">
+                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
+                    </a>
+                    <div>
+                        <h3 class="titulo_vt">Argylle</h3>
+                        <div class="detalles">
+                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
+                        </div>
+                        <div class="generos sinopsis-div">
+                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
+                            <div class="dropdown-content hvr-fade">
+                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
+                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
+                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
+                                    espionaje… donde nada, ni nadie, es lo que parece</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="elemento ">
+                    <a href="../pages/argylle.html" title="ver Argylle">
+                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
+                    </a>
+                    <div>
+                        <h3 class="titulo_vt">Argylle</h3>
+                        <div class="detalles">
+                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
+                        </div>
+                        <div class="generos sinopsis-div">
+                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
+                            <div class="dropdown-content hvr-fade">
+                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
+                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
+                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
+                                    espionaje… donde nada, ni nadie, es lo que parece</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="elemento ">
+                    <a href="../pages/argylle.html" title="ver Argylle">
+                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
+                    </a>
+                    <div>
+                        <h3 class="titulo_vt">Argylle</h3>
+                        <div class="detalles">
+                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
+                        </div>
+                        <div class="generos sinopsis-div">
+                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
+                            <div class="dropdown-content hvr-fade">
+                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
+                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
+                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
+                                    espionaje… donde nada, ni nadie, es lo que parece</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+        </section>
         
+        <h4 class="h3maspeliculas h3vertodos">ciencia ficción</h4>
+        <section name="cienciaficcion" class="genero_vt">
+            contenido
+        </section>
+
+        <h4 class="h3maspeliculas h3vertodos">comedia</h4>
+        <section name="comedia" class="genero_vt">
+            contenido
+        </section>
+
+        <h4 class="h3maspeliculas h3vertodos">documental</h4>
+        <section name="documental" class="genero_vt">
+            contenido
+        </section>
+
+        <h4 class="h3maspeliculas h3vertodos">drama</h4>
+        <section name="drama" class="genero_vt">
+            contenido
+        </section>
+
+        <h4 class="h3maspeliculas h3vertodos">romance</h4>
+        <section name="infantil" class="genero_vt">
+            contenido
+        </section>
+
+        <h4 class="h3maspeliculas h3vertodos">suspenso</h4>
+        <section name="suspenso" class="genero_vt">
+            contenido
+        </section>
+
+        <h4 class="h3maspeliculas h3vertodos">terror</h4>
+        <section name="terror" class="genero_vt">
+            contenido
+        </section>
+
         <p id="temp">Página en construcción 🚜</p>
 
     </main>
@@ -122,3 +440,5 @@
 
 </body>
 </html>
+
+

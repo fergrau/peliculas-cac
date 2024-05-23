@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Fernando E. Grau"/>
     <title>Cinefy・Películas Online</title>
+
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/queries.css">
     <link rel="icon" href="./media/ico/flavicon.ico">
@@ -33,13 +34,15 @@
                 <button id="boton-hamburguesa"><span>&#9776;</span></button>
                 <div class="dropdown-content dropdown-hamburguesa animate__animated animate__fadeIn">
                     <div class="generos">
+                        <a rel="noopener" target="_self" class="hvr-fade" id="spanLogin1" href="./pages/formulario2.html"><span>Iniciar Sesión</span></a>
+                        <a rel="noopener" target="_self" class="hvr-fade" id="spanLogin2" onclick="salir()"><span>Cerrar Sesión</span></a>
                         <button class="boton_generos hvr-fade" href="#">Buscar</button>
                         <div class="dropdown-content generos_to_hide bb">
                             <input class="buscar hvr-fade" type="search" name="Buscar" placeholder="Buscar">
                         </div>
                     </div>
-                    <a rel="noopener" target="_self" class="hvr-fade" href="./pages/z_vertodos" id="a1">Películas</a>
-                    <a rel="noopener" target="_self" class="hvr-fade" href="#">Series</a>
+                    <a rel="noopener" target="_self" class="hvr-fade" href="./pages/z_vertodos.html" id="a1">Películas</a>
+                    <!-- <a rel="noopener" target="_self" class="hvr-fade" href="./pages/z_series.html">Series</a> -->
                     <div class="generos">
                         <button class="boton_generos hvr-fade" href="#">Géneros</button>
                         <div class="dropdown-content generos_to_hide divc">
@@ -79,7 +82,7 @@
                     </section>
                     <section class="sectionheadernav">
                         <a href="./pages/z_vertodos.html"><button class="novedades peliculas hvr-fade" alt="películas">Películas</button></a> 
-                        <a href="#"><button class="series hvr-fade" alt="series">Series</button></a>
+                        <!-- <a href="./pages/z_series.html"><button class="series hvr-fade" alt="series">Series</button></a> -->
                         <div class="generos">
                             <button class="boton_generos hvr-fade" href="#">Géneros</button>
                             <div class="dropdown-content slideDown generos_to_hide">
@@ -95,6 +98,9 @@
                             </div>
                         </div>    
                         <input class="buscar hvr-fade" type="search" name="Buscar" placeholder="Buscar">
+                        <a href="./pages/formulario2.html"><button class="series hvr-fade" id="login" alt="login/registro"><span>Iniciar Sesión</span></button></a>
+                        <button class="series hvr-fade" id="login2" alt="login/registro" onclick="salir()"><span id="spanLoginA">Sesión iniciada</span><span id="spanLoginB">Cerrar Sesión</span></button>
+
                     </section>
                 </header>
             </div>
@@ -213,6 +219,6 @@
             </div>
         </nav>
     </footer>
-
+    <script src="./js/general.js"></script>
 </body>
 </html>

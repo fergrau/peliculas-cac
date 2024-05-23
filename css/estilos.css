@@ -119,7 +119,7 @@ aside{
     justify-content: right;
     align-content: center;
 }
-.novedades, .boton_generos, .series, .aside_genero{
+.novedades, .boton_generos, .series, .aside_genero {
     height: 2.5em;
     width: 8em;
     margin-right: 0.8em;
@@ -132,6 +132,7 @@ aside{
     font-weight: 100;
     box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.2);
     padding-bottom: 0.2em;
+    padding-top: 0.12em; /* copiar este estilo en verpeliculas */
 }
 /* .peliculas {
     background-color: rgb(195, 43, 43);
@@ -159,6 +160,9 @@ aside{
     text-indent: 1em;
     box-shadow: 0px 3px 5px 5px rgba(0, 0, 0, 0.2);
     padding-bottom: 0.2em;
+    padding-top: 0.12em; /* copiar este estilo en verpeliculas */
+    text-align: center;
+    text-indent: -0.5em;
 }
 .buscar:focus {
     outline: none;
@@ -171,6 +175,40 @@ aside{
     font-weight: 100;
     font-weight: 400;
 }
+
+#login { /* copiar este estilo en verpeliculas */
+    width: 8em;
+    background-color: rgb(173, 35, 0);
+    text-decoration: none;
+    padding-top: 0.25em;
+}
+a { /* copiar este estilo en verpeliculas */
+    text-decoration: none;
+}
+#login:hover { /* copiar este estilo en verpeliculas */
+    background-color: #ff9d00;
+    color: black;
+
+}
+#login2 { /* copiar este estilo en verpeliculas */
+    width: 8em;
+    background-color: rgb(6, 110, 6);
+    text-decoration: none;
+    justify-content: center;
+    padding-top: 0.7em;
+    display: none;
+}
+#spanLogin2 {
+    display: none;
+}
+#spanLoginB { /* copiar este estilo en verpeliculas */
+    display: none;
+}
+.login3 { /* copiar este estilo en verpeliculas */
+    background-color: #ff9d00 !important;
+    color: black !important;
+}
+
 
 /* Hoovers Nav */
 .novedades:hover, .boton_generos:hover, 
@@ -298,18 +336,19 @@ aside{
     font-variant: small-caps;
     letter-spacing: 0.3em;
     background-color: rgba(0, 0, 0, 0.3);
-    padding-top: 0.25em;
+    padding-top: 0;
 }
 .h2novedades{
+    height: 1.35em;
     width: auto;
-    margin-top: -1.25em;
+    margin-top: -1.2em;
     margin-bottom: 1em;
     overflow: hidden;
 }
 .h2generos{
     width: 100%;
     padding-left: 0em;
-    margin-top: 0em;
+    margin-top: 0.1em;
     background-color: rgba(0, 0, 0, 0.3);
     border: none;
     position: flex;
