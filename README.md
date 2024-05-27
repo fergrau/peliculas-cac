@@ -1,5 +1,13 @@
 <h3>Historial de Actualizaciones:</h3><br>
 
+<b>27/5</b>
+
+∙ Login y página API incorporadas y en funcionamiento. <br>
+∙ Cambios estéticos menores en botones nav superior y optimización de algunos fragmentos del código en general. <br>
+∙ API: Se utilizó The Movie DataBase (TMDB), devuelve una página al azar entre 1 y 500 disponibles, con 20 objetos por cada página. Los datos se muestran en grid iterando cada uno en cada sitio del html. Queda pendiente iterar también el código html e incluir todo el fragmento de cada iteración por .appendChild o método similar. <br>
+∙ La página web es funcional, todas las películas presentadas en el index se pueden ver. El login/logout mantiene el status entre sesiones y hasta que el usuario lo cambie. Todas las páginas se encuentran interconectadas y es posible una navegación prácticamente completa. <br>
+∙ <i> Nota: estimo que usaremos el Backend para hacer funcional el campo de búsqueda y en el caso de mi web los accesos discriminados por Género de película <i><br>
+
 <b>22/5</b>
 
 ∙ Branch "v3". Incorporación de Javascript.
