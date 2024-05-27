@@ -91,10 +91,11 @@ main{
     align-content: center;
 }
 .novedades, .boton_generos, .series{
+    /* modificado aqui botonera color y borde */ 
     height: 2.5em;
     width: 8em;
     margin-right: 0.8em;
-    background-color: rgb(5, 73, 95);
+    background-color: black;
     color:aliceblue;
     border-style: none;
     border-radius: 5px;
@@ -102,13 +103,19 @@ main{
     font-size: 1em;
     font-weight: 100;
     box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    
+    border-style: solid;
+    border-color: rgb(50, 50, 50);
+    border-width: thin;
+    border-radius: 8px;
 }
-.buscar{
+.buscar{ 
+    /* modificado aqui botonera color y borde */
     height: 2.5em;
     width: 11em;
     margin-right: 2em;
     border-radius: 0.4em;
-    background-color: rgb(5, 73, 95);
+    background-color: black;
     color:aliceblue;
     border-style: none;
     border-radius: 5px;
@@ -118,6 +125,11 @@ main{
     font-weight: 300;
     text-indent: 1em;
     box-shadow: 0px 3px 5px 5px rgba(0, 0, 0, 0.2);
+    
+    border-style: solid;
+    border-color: rgb(50, 50, 50);
+    border-width: thin;
+    border-radius: 8px;
 }
 .buscar:focus {
     outline: none;
@@ -191,7 +203,7 @@ main{
     z-index: 2;
     border-radius: 8px;
     border-style: none;
-    background-color: rgb(5, 73, 95);
+    background-color: rgb(22, 22, 22);
 }
 .dropdown-content a{
     height: 1.3em;

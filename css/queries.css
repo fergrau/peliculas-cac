@@ -405,6 +405,12 @@
         width: 80%;
         margin-top: 6em;
     }
+    #contenedor_peliculas {
+        grid-template-columns: repeat(auto-fill, minmax(8em, 1fr)) !important;
+    }
+    /* #contenedor_peliculas img {
+        width: 3em;
+    } */
 }
 
 @media only screen and (max-width: 580px ) {
@@ -416,7 +422,6 @@
         margin: 0;
         padding: 0;
     }
-    
     
     .sectionheadernav {
         display: none;
@@ -663,5 +668,14 @@
         border-width: thin;
         border-color: rgb(173, 35, 0);
         height: 1.7em;
+    }
+
+    #contenedor_peliculas {
+        grid-template-columns: repeat(auto-fill, minmax(6em, 1fr)) !important;
+    }
+
+    .h3vertodos {
+        height: 3em !important;
+        margin-bottom: 0.85em !important;
     }
 }

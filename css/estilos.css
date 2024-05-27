@@ -6,6 +6,10 @@
     font-weight: 100;
     font-style: normal;
 } 
+.hidden {
+    display: none;
+}
+
 body{
     width: 99.3%;
     height: auto;

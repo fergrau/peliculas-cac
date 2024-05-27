@@ -166,7 +166,7 @@ function iniciar2() {
         localStorage.setItem('isLoggedIn', true);
       }
       // ingreso a la siguiente página según lo solicitado ref Tarea para Final Integrador Front
-      var nuevaPagina = '../index.html';
+      var nuevaPagina = '../pages/z_vertodos.html';
       window.location.href = nuevaPagina;
     }
   }
@@ -247,7 +247,7 @@ function registrarU() {
       if (typeof(Storage) !== "undefined") {
         localStorage.setItem('isLoggedIn', true);
       }
-      var nuevaPagina = '../index.html';
+      var nuevaPagina = '../pages/z_vertodos.html';
       window.location.href = nuevaPagina;
     }
   }

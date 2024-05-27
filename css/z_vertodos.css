@@ -31,16 +31,17 @@ body {
 }
 
 main {
-    min-height: 50vh;
-    width: 100;
+    min-height: 80vh;
+    width: 100vw;
 }
 
 .h3vertodos {
     width: 100%;
     text-indent: 0;
-    margin-top: 0em;
     font-weight: 300;
     letter-spacing: 0.4em;
+    text-indent: 0em !important;
+    margin-top: -0.5em;
 }
 /* h4 {
     color: #6cc0bd;
@@ -48,10 +49,10 @@ main {
 .genero_vt {
     width: 99%;
 }
-.contenedor {
+#contenedor_peliculas {
     width: 98%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(12em, 1fr)) !important;
     grid-auto-flow: row;
     gap: 1em;
     align-items: center;
@@ -59,7 +60,6 @@ main {
     padding-left: 0.55em;
 }
 .elemento {
-    position: relative;
     max-width: 14em;
     border-radius: 1em;
     background-color: rgba(0, 0, 0, 0.523);
@@ -74,16 +74,16 @@ main {
 }
 .elemento img {
     width: 100% !important;
-    height: auto !important;
+    /* height: auto !important; */
     display: flex !important;
     object-fit: fill !important;
 }
 .titulo_vt {
     margin: 0;
-    padding-top: 0.4em;
-    margin-bottom: -0.25em;
-    height: 1em;
-    font-size: 1.5em;
+    margin-top: 0.75em;
+    margin-bottom: 0.25em;
+    height: 3.5em;
+    font-size: 1em;
     font-weight: 100;
     font-family: dosis, helvetica, verdana, sans-serif;
     text-align: center;
@@ -193,6 +193,41 @@ main {
 }
 
 
+/* icono TMDB */
+.atribucion_api img {
+    width: 3.5em;
+    margin-right: -5em;
+}
+.atribucion_api_small img {
+    width: 4em;
+    margin-right: 0;
+}
+
+/* modificaciones especificas */
+
+.buscar_modif, .buscar_modif:hover, .generos_modif, 
+.generos_modif:hover, .generos > .generos_modif {
+    width: 98%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.slideDown {
+    transform: translateY(21em) translateX(-0.5em);
+}
+.slideDown > a {
+    border-radius: 8px;
+}
+.a1 {
+    margin-top: 0.5em;
+}
+
+.botonVT {
+    background-color: black;
+    border-style: solid;
+    border-width: thin;
+    border-color: gray;
+}
 
 
 

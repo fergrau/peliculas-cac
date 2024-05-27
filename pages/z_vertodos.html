@@ -7,8 +7,9 @@
     <title>Cinefy・Películas por géneros</title>
     
     <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" href="../css/queries.css">
+    
     <link rel="stylesheet" href="../css/z_vertodos.css">
+    <link rel="stylesheet" href="../css/queries.css">
 
     <link rel="icon" href="../media/ico/flavicon.ico">
     
@@ -30,7 +31,7 @@
             <h1 id="h1eslogan">Cine à la carte</h1>
         </div>
 
-        <nav class="nav_hidden hamburguesa">
+        <!-- <nav class="nav_hidden hamburguesa">
             <button id="boton-hamburguesa"><span>&#9776;</span></button>
             <div class="dropdown-content dropdown-hamburguesa animate__animated animate__fadeIn">
                 <div class="generos">
@@ -61,12 +62,48 @@
                 <a class="a4" rel="noopener" target="_self" class="hvr-fade" href="../pages/contacto.html">Contacto</a>
                 <a class="a4" rel="noopener" target="_self" class="hvr-fade" href="../pages/formulario.html">Sugerencias</a>
             </div>
-        </nav> 
+        </nav>  -->
+
+        <div class="nav_hidden hamburguesa">
+            <button id="boton-hamburguesa"><span>&#9776;</span></button>
+            <div class="dropdown-content dropdown-hamburguesa animate__animated animate__fadeIn">
+                <div class="generos">
+                    <a rel="noopener" target="_self" class="hvr-fade" id="spanLogin1" href="../pages/formulario2.html"><span>Iniciar Sesión</span></a>
+                    <a rel="noopener" target="_self" class="hvr-fade" id="spanLogin2" onclick="salir()"><span>Cerrar Sesión</span></a>
+                    <button class="boton_generos hvr-fade buscar_modif" href="#">Buscar</button>
+                    <!-- <div class="dropdown-content generos_to_hide bb">
+                        <input class="buscar hvr-fade" type="search" name="Buscar" placeholder="Buscar">
+                    </div> -->
+                </div>
+                <!-- <a rel="noopener" target="_self" class="hvr-fade" href="../pages/z_vertodos.html" id="a1">Películas</a> -->
+                <!-- <a rel="noopener" target="_self" class="hvr-fade" href="./pages/z_series.html">Series</a> -->
+                <div class="generos">
+                    <button class="boton_generos hvr-fade generos_modif" href="#">Géneros</button>
+                    <!-- <div class="dropdown-content generos_to_hide divc">
+                        <a rel="noopener" target="_self" class="hvr-fade" href="#" id="a1">Acción</a>
+                        <a rel="noopener" target="_self" class="hvr-fade" href="#">Aventura</a>
+                        <a rel="noopener" target="_self" class="hvr-fade" href="#">Ciencia Ficción</a>
+                        <a rel="noopener" target="_self" class="hvr-fade" href="#">Comedia</a>
+                        <a rel="noopener" target="_self" class="hvr-fade" href="#">Drama</a>
+                        <a rel="noopener" target="_self" class="hvr-fade" href="#">Infantil</a>
+                        <a rel="noopener" target="_self" class="hvr-fade" href="#">Romance</a>
+                        <a rel="noopener" target="_self" class="hvr-fade" href="#">Suspenso</a>
+                        <a rel="noopener" target="_self" class="hvr-fade" href="#" id="a9">Terror</a>
+                    </div> -->
+                </div> 
+                <!-- <a rel="noopener" target="_self" class="hvr-fade" href="#">Buscar</a> -->
+                <hr>
+                <a class="a4" rel="noopener" target="_self" class="hvr-fade" href="../pages/infoproyecto.html">Acerca de</a>
+                <a class="a4" rel="noopener" target="_self" class="hvr-fade" href="../pages/disclaimer.html">Disclaimer</a>
+                <a class="a4" rel="noopener" target="_self" class="hvr-fade" href="../pages/contacto.html">Contacto</a>
+                <a class="a4" rel="noopener" target="_self" class="hvr-fade" href="../pages/formulario.html">Sugerencias</a>
+            </div>
+        </div>
 
     </header>
 
     <section class="superior_con_aside">
-        <div id="div_superior_1">
+        <!-- <div id="div_superior_1">
             <nav class="headermain">
                 <section class="sectionheaderlogo">
                     <div class="hvr-backward">
@@ -97,318 +134,355 @@
                     <input class="buscar hvr-fade" type="search" name="Buscar" placeholder="Buscar">
                 </section>
             </nav>
+        </div> -->
+
+        <div id="div_superior_1">
+            <header class="headermain">
+                <section class="sectionheaderlogo text-focus-in">
+                    <div class="text-focus-in">
+                        <a class="logocombinado" href="../index.html">
+                            <img id="logo" src="../media/ico/flavicon.ico" alt="icon popcorn">
+                            <img id="cinefy" src="../media/ico/logo_web_inv.png" alt="logo web cinfy">
+                        </a>
+                    </div>
+                    <h1 id="h1eslogan">Cine à la carte</h1>
+                </section>
+                <section class="sectionheadernav">
+                    <!-- <a href="../pages/z_vertodos.html"><button class="novedades peliculas hvr-fade" alt="películas">Películas</button></a>  -->
+                    <!-- <a href="./pages/z_series.html"><button class="series hvr-fade" alt="series">Series</button></a> -->
+                    <div class="generos">
+                        <button class="boton_generos hvr-fade botonVT" href="#">Géneros</button>
+                        <!-- <div class="dropdown-content slideDown generos_to_hide">
+                            <a rel="noopener" target="_self" class="hvr-fade" href="#" id="a1">Acción</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="#">Aventura</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="#">Ciencia Ficción</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="#">Comedia</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="#">Drama</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="#">Infantil</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="#">Romance</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="#">Suspenso</a>
+                            <a rel="noopener" target="_self" class="hvr-fade" href="#" id="a9">Terror</a>
+                        </div> -->
+                    </div>    
+                    <input class="buscar hvr-fade botonVT" type="search" name="Buscar" placeholder="Buscar">
+                    <a href="../pages/formulario2.html"><button class="series hvr-fade" id="login" alt="login/registro"><span>Iniciar Sesión</span></button></a>
+                    <button class="series hvr-fade" id="login2" alt="login/registro" onclick="salir()"><span id="spanLoginA">Sesión iniciada</span><span id="spanLoginB">Cerrar Sesión</span></button>
+
+                </section>
+            </header>
         </div>
+
     </section>
 
     <main class="main_vertodos">
 
-        <!-- <h3 class="h3maspeliculas h3vertodos">películas por género</h3> -->
+        <div class="h3vertodos">
+            <h3 class="h3maspeliculas h3vertodos">películas aleatorias api</h3>
+        </div>
 
-        <h4 class="h3maspeliculas h3vertodos">acción</h4>
-        <section name="accion" class="genero_vt">
-            <div class="contenedor">
-               
-                <div class="elemento hvr-grow">
-                    <a href="../pages/argylle.html" title="ver Argylle">
-                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
-                    <div>
-                        <h3 class="titulo_vt">Argylle</h3>
-                        <div class="detalles">
-                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
-                        </div>
-                    </a>
-                        <div class="generos sinopsis-div">
-                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
-                            <div class="dropdown-content hvr-fade">
-                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
-                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
-                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
-                                    espionaje… donde nada, ni nadie, es lo que parece</p>
-                            </div>
-                        </div> 
-                </div>
+        <section id="contenedor_peliculas">
                 
-            </div>
-                
-                <div class="elemento ">
-                    <a href="../pages/argylle.html" title="ver Argylle">
-                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
-                    </a>
-                    <div>
-                        <h3 class="titulo_vt">Argylle</h3>
-                        <div class="detalles">
-                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
+            <div class="elemento ">
+                <a id="i0">
+                    <img>
+                </a>
+                <div>
+                    <h3 id="t0" class="titulo_vt"></h3>
+                    <div class="generos sinopsis-div">
+                        <!-- <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button> -->
+                        <div class="dropdown-content hvr-fade">
+                            <p></p>
                         </div>
-                        <div class="generos sinopsis-div">
-                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
-                            <div class="dropdown-content hvr-fade">
-                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
-                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
-                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
-                                    espionaje… donde nada, ni nadie, es lo que parece</p>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-
-                <div class="elemento ">
-                    <a href="../pages/argylle.html" title="ver Argylle">
-                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
-                    </a>
-                    <div>
-                        <h3 class="titulo_vt">Argylle</h3>
-                        <div class="detalles">
-                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
-                        </div>
-                        <div class="generos sinopsis-div">
-                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
-                            <div class="dropdown-content hvr-fade">
-                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
-                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
-                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
-                                    espionaje… donde nada, ni nadie, es lo que parece</p>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-                
-                <div class="elemento ">
-                    <a href="../pages/argylle.html" title="ver Argylle">
-                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
-                    </a>
-                    <div>
-                        <h3 class="titulo_vt">Argylle</h3>
-                        <div class="detalles">
-                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
-                        </div>
-                        <div class="generos sinopsis-div">
-                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
-                            <div class="dropdown-content hvr-fade">
-                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
-                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
-                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
-                                    espionaje… donde nada, ni nadie, es lo que parece</p>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-
-                <div class="elemento ">
-                    <a href="../pages/argylle.html" title="ver Argylle">
-                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
-                    </a>
-                    <div>
-                        <h3 class="titulo_vt">Argylle</h3>
-                        <div class="detalles">
-                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
-                        </div>
-                        <div class="generos sinopsis-div">
-                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
-                            <div class="dropdown-content hvr-fade">
-                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
-                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
-                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
-                                    espionaje… donde nada, ni nadie, es lo que parece</p>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-
-                <div class="elemento ">
-                    <a href="../pages/argylle.html" title="ver Argylle">
-                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
-                    </a>
-                    <div>
-                        <h3 class="titulo_vt">Argylle</h3>
-                        <div class="detalles">
-                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
-                        </div>
-                        <div class="generos sinopsis-div">
-                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
-                            <div class="dropdown-content hvr-fade">
-                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
-                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
-                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
-                                    espionaje… donde nada, ni nadie, es lo que parece</p>
-                            </div>
-                        </div> 
-                    </div>
+                    </div> 
                 </div>
             </div>
 
-        </section>
-
-        <h4 class="h3maspeliculas h3vertodos">aventura</h4>
-        <section name="aventura" class="genero_vt">
-            
-            <div class="contenedor">
-               
-                <div class="elemento hvr-grow">
-                    <a href="../pages/argylle.html" title="ver Argylle">
-                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
-                    <div>
-                        <h3 class="titulo_vt">Argylle</h3>
-                        <div class="detalles">
-                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
+            <div class="elemento ">
+                <a id="i1">
+                    <img>
+                </a>
+                <div>
+                    <h3 id="t1" class="titulo_vt"></h3>
+                    <div class="generos sinopsis-div">
+                        <!-- <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button> -->
+                        <div class="dropdown-content hvr-fade">
+                            <p></p>
                         </div>
-                    </a>
-                        <div class="generos sinopsis-div">
-                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
-                            <div class="dropdown-content hvr-fade">
-                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
-                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
-                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
-                                    espionaje… donde nada, ni nadie, es lo que parece</p>
-                            </div>
-                        </div> 
-                </div>
-                
-            </div>
-                
-                <div class="elemento ">
-                    <a href="../pages/argylle.html" title="ver Argylle">
-                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
-                    </a>
-                    <div>
-                        <h3 class="titulo_vt">Argylle</h3>
-                        <div class="detalles">
-                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
-                        </div>
-                        <div class="generos sinopsis-div">
-                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
-                            <div class="dropdown-content hvr-fade">
-                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
-                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
-                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
-                                    espionaje… donde nada, ni nadie, es lo que parece</p>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-
-                <div class="elemento ">
-                    <a href="../pages/argylle.html" title="ver Argylle">
-                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
-                    </a>
-                    <div>
-                        <h3 class="titulo_vt">Argylle</h3>
-                        <div class="detalles">
-                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
-                        </div>
-                        <div class="generos sinopsis-div">
-                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
-                            <div class="dropdown-content hvr-fade">
-                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
-                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
-                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
-                                    espionaje… donde nada, ni nadie, es lo que parece</p>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-                
-                <div class="elemento ">
-                    <a href="../pages/argylle.html" title="ver Argylle">
-                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
-                    </a>
-                    <div>
-                        <h3 class="titulo_vt">Argylle</h3>
-                        <div class="detalles">
-                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
-                        </div>
-                        <div class="generos sinopsis-div">
-                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
-                            <div class="dropdown-content hvr-fade">
-                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
-                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
-                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
-                                    espionaje… donde nada, ni nadie, es lo que parece</p>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-
-                <div class="elemento ">
-                    <a href="../pages/argylle.html" title="ver Argylle">
-                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
-                    </a>
-                    <div>
-                        <h3 class="titulo_vt">Argylle</h3>
-                        <div class="detalles">
-                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
-                        </div>
-                        <div class="generos sinopsis-div">
-                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
-                            <div class="dropdown-content hvr-fade">
-                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
-                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
-                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
-                                    espionaje… donde nada, ni nadie, es lo que parece</p>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-
-                <div class="elemento ">
-                    <a href="../pages/argylle.html" title="ver Argylle">
-                        <img src="../media/img/portadas/argylle.jpg" alt="ver Agylle" class="tarjeta-img">
-                    </a>
-                    <div>
-                        <h3 class="titulo_vt">Argylle</h3>
-                        <div class="detalles">
-                            <p id="duracion_año">2h 19m  <span id="punto"> · </span>  2024</p>
-                        </div>
-                        <div class="generos sinopsis-div">
-                            <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button>
-                            <div class="dropdown-content hvr-fade">
-                                <p>Cuando las tramas de sus libros empiezan a parecerse demasiado a 
-                                    las actividades de un siniestro sindicato clandestino, la introvertida autora de 
-                                    novelas de espías Elly Conway y su gato se ven inmersos en el verdadero mundo del 
-                                    espionaje… donde nada, ni nadie, es lo que parece</p>
-                            </div>
-                        </div> 
-                    </div>
+                    </div> 
                 </div>
             </div>
 
-        </section>
-        
-        <h4 class="h3maspeliculas h3vertodos">ciencia ficción</h4>
-        <section name="cienciaficcion" class="genero_vt">
-            contenido
-        </section>
+            <div class="elemento ">
+                <a id="i2">
+                    <img>
+                </a>
+                <div>
+                    <h3 id="t2" class="titulo_vt"></h3>
+                    <div class="generos sinopsis-div">
+                        <!-- <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button> -->
+                        <div class="dropdown-content hvr-fade">
+                            <p></p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
 
-        <h4 class="h3maspeliculas h3vertodos">comedia</h4>
-        <section name="comedia" class="genero_vt">
-            contenido
-        </section>
+            <div class="elemento ">
+                <a id="i3">
+                    <img>
+                </a>
+                <div>
+                    <h3 id="t3" class="titulo_vt"></h3>
+                    <div class="generos sinopsis-div">
+                        <!-- <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button> -->
+                        <div class="dropdown-content hvr-fade">
+                            <p></p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
 
-        <h4 class="h3maspeliculas h3vertodos">documental</h4>
-        <section name="documental" class="genero_vt">
-            contenido
-        </section>
+            <div class="elemento ">
+                <a id="i4">
+                    <img>
+                </a>
+                <div>
+                    <h3 id="t4" class="titulo_vt"></h3>
+                    <div class="generos sinopsis-div">
+                        <!-- <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button> -->
+                        <div class="dropdown-content hvr-fade">
+                            <p></p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
 
-        <h4 class="h3maspeliculas h3vertodos">drama</h4>
-        <section name="drama" class="genero_vt">
-            contenido
-        </section>
+            <div class="elemento ">
+                <a id="i5">
+                    <img>
+                </a>
+                <div>
+                    <h3 id="t5" class="titulo_vt"></h3>
+                    <div class="generos sinopsis-div">
+                        <!-- <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button> -->
+                        <div class="dropdown-content hvr-fade">
+                            <p></p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
 
-        <h4 class="h3maspeliculas h3vertodos">romance</h4>
-        <section name="infantil" class="genero_vt">
-            contenido
-        </section>
+            <div class="elemento ">
+                <a id="i6">
+                    <img>
+                </a>
+                <div>
+                    <h3 id="t6" class="titulo_vt"></h3>
+                    <div class="generos sinopsis-div">
+                        <!-- <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button> -->
+                        <div class="dropdown-content hvr-fade">
+                            <p></p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
 
-        <h4 class="h3maspeliculas h3vertodos">suspenso</h4>
-        <section name="suspenso" class="genero_vt">
-            contenido
-        </section>
+            <div class="elemento ">
+                <a id="i7">
+                    <img>
+                </a>
+                <div>
+                    <h3 id="t7" class="titulo_vt"></h3>
+                    <div class="generos sinopsis-div">
+                        <!-- <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button> -->
+                        <div class="dropdown-content hvr-fade">
+                            <p></p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
 
-        <h4 class="h3maspeliculas h3vertodos">terror</h4>
-        <section name="terror" class="genero_vt">
-            contenido
-        </section>
+            <div class="elemento ">
+                <a id="i8">
+                    <img>
+                </a>
+                <div>
+                    <h3 id="t8" class="titulo_vt"></h3>
+                    <div class="generos sinopsis-div">
+                        <!-- <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button> -->
+                        <div class="dropdown-content hvr-fade">
+                            <p></p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
 
-        <p id="temp">Página en construcción 🚜</p>
+            <div class="elemento ">
+                <a id="i9">
+                    <img>
+                </a>
+                <div>
+                    <h3 id="t9" class="titulo_vt"></h3>
+                    <div class="generos sinopsis-div">
+                        <!-- <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button> -->
+                        <div class="dropdown-content hvr-fade">
+                            <p></p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="elemento ">
+                <a id="i10">
+                    <img>
+                </a>
+                <div>
+                    <h3 id="t10" class="titulo_vt"></h3>
+                    <div class="generos sinopsis-div">
+                        <!-- <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button> -->
+                        <div class="dropdown-content hvr-fade">
+                            <p></p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="elemento ">
+                <a id="i11">
+                    <img>
+                </a>
+                <div>
+                    <h3 id="t11" class="titulo_vt"></h3>
+                    <div class="generos sinopsis-div">
+                        <!-- <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button> -->
+                        <div class="dropdown-content hvr-fade">
+                            <p></p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="elemento ">
+                <a id="i12">
+                    <img>
+                </a>
+                <div>
+                    <h3 id="t12" class="titulo_vt"></h3>
+                    <div class="generos sinopsis-div">
+                        <!-- <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button> -->
+                        <div class="dropdown-content hvr-fade">
+                            <p></p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="elemento ">
+                <a id="i13">
+                    <img>
+                </a>
+                <div>
+                    <h3 id="t13" class="titulo_vt"></h3>
+                    <div class="generos sinopsis-div">
+                        <!-- <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button> -->
+                        <div class="dropdown-content hvr-fade">
+                            <p></p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="elemento ">
+                <a id="i14">
+                    <img>
+                </a>
+                <div>
+                    <h3 id="t14" class="titulo_vt"></h3>
+                    <div class="generos sinopsis-div">
+                        <!-- <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button> -->
+                        <div class="dropdown-content hvr-fade">
+                            <p></p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="elemento ">
+                <a id="i15">
+                    <img>
+                </a>
+                <div>
+                    <h3 id="t15" class="titulo_vt"></h3>
+                    <div class="generos sinopsis-div">
+                        <!-- <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button> -->
+                        <div class="dropdown-content hvr-fade">
+                            <p></p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="elemento ">
+                <a id="i16">
+                    <img>
+                </a>
+                <div>
+                    <h3 id="t16" class="titulo_vt"></h3>
+                    <div class="generos sinopsis-div">
+                        <!-- <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button> -->
+                        <div class="dropdown-content hvr-fade">
+                            <p></p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="elemento ">
+                <a id="i17">
+                    <img>
+                </a>
+                <div>
+                    <h3 id="t17" class="titulo_vt"></h3>
+                    <div class="generos sinopsis-div">
+                        <!-- <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button> -->
+                        <div class="dropdown-content hvr-fade">
+                            <p></p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="elemento ">
+                <a id="i18">
+                    <img>
+                </a>
+                <div>
+                    <h3 id="t18" class="titulo_vt"></h3>
+                    <div class="generos sinopsis-div">
+                        <!-- <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button> -->
+                        <div class="dropdown-content hvr-fade">
+                            <p></p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="elemento ">
+                <a id="i19">
+                    <img>
+                </a>
+                <div>
+                    <h3 id="t19" class="titulo_vt"></h3>
+                    <div class="generos sinopsis-div">
+                        <!-- <button class="boton_generos boton_sinopsis hvr-fade" href="#">sinopsis</button> -->
+                        <div class="dropdown-content hvr-fade">
+                            <p></p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+    </section>
 
     </main>
 
@@ -418,6 +492,7 @@
             <a href="../pages/disclaimer.html" target="_blank"  class="b3" title="Aviso legal">Disclaimer</a> 
             <a href="../pages/contacto.html" target="_blank"  class="b3" title="Información sobre el Autor">Contacto y Autoría</a>
             <a href="../pages/formulario.html" target="_blank"  class="b3" title="Consultas y sugerencias">Consultas y Sugerencias</a>
+            <span class="atribucion_api atribucion_api_small"><img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" alt="TMDB_icon"></span>
         </nav>
     </footer>
 
@@ -435,9 +510,14 @@
             <div class="section_f">
                 <a href="../pages/formulario.html" target="_blank"  class="b3" title="Consultas y sugerencias">Consultas y Sugerencias</a>
             </div>
+            <div class="section_f">
+                <span class="atribucion_api"><img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_1-5bdc75aaebeb75dc7ae79426ddd9be3b2be1e342510f8202baf6bffa71d7f5c4.svg" alt="TMDB_icon"></span>
+            </div>
         </nav>
     </footer>
 
+    <script src="../js/general.js"></script>
+    <script type="module" src="../js/z_vertodos.js"></script>
 </body>
 </html>
 
